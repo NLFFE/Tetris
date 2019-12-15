@@ -1,0 +1,24 @@
+{
+  "name": "te",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "electron index.js",
+    "watch": "webpack --watch --progress",
+    "prod": "webpack --mode=production",
+    "x64build": "electron-packager . player --platform=win32 --arch=x64 --out=dist64 --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asar": "^2.0.3",
+    "css-loader": "^3.3.2",
+    "electron": "^7.1.5",
+    "electron-packager": "^14.1.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
